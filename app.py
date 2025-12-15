@@ -271,6 +271,7 @@ def generate_pdf_report(data, output_path):
         story.append(Spacer(1, 0.2*inch))
     
     doc.build(story)
+
 if __name__ == '__main__':
     # Validate configuration
     try:
@@ -291,8 +292,6 @@ if __name__ == '__main__':
     print(f"Report folder: {Config.REPORT_FOLDER}")
     print("="*60 + "\n")
     
-    if __name__ == '__main__':
     import os
     port = int(os.environ.get('PORT', 5000))
-
     app.run(debug=False, host='0.0.0.0', port=port)
